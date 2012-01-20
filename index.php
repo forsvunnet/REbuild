@@ -5,6 +5,7 @@
     <title></title>
     <script src="jquery-1.7.1.min.js"></script>
     <script src="engine.js"></script>
+    <script src="game.js"></script>
     <title>¤</title>
     <style type="text/css">
       body{
@@ -43,11 +44,15 @@
         height: 580px;
         width: 1000px;
       }
+      #game{
+        width: 320px;
+        height: 480px;
+      }
     </style>
   </head>
   <body>
     <div id="device"><div id="retainer">
-    <div><canvas id="game" width="320" height="480"></canvas></div>
+    <div><canvas id="game" width="80" height="120"></canvas></div>
     <div id="console">console</div></div></div>
   </body>
 </html>
