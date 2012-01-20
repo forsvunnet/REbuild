@@ -3,9 +3,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title></title>
-    <script src="jquery-1.7.1.min.js"></script>
-    <script src="engine.js"></script>
-    <script src="game.js"></script>
+    <script type="application/x-javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="application/x-javascript" src="engine.js"></script>
+    <script type="application/x-javascript" src="game.js"></script>
     <title>¤</title>
     <style type="text/css">
       body{
@@ -13,13 +13,11 @@
       }
       #console{
         background: #333;
-        border: 1px solid #999;
         color: #99FF00;
         padding: 10px;
-        width: 578px;
-        height: 458px;
+        width: 580px;
+        height: 460px;
         
-        border-radius:6px;
         font-family: Arial, sans;
         overflow: hidden;
         float: left;
@@ -27,13 +25,13 @@
       #game{
         background: #CCC;
         float: left;
-        margin-right: 50px;
+        /*margin-right: 50px;*/
       }
       #device{
         background: #666;
         border: 1px solid #999;
         border-radius:6px;
-        padding:50px;
+        /*padding:50px;*/
         position: relative;
         
         width: 320px;
@@ -48,11 +46,18 @@
         width: 320px;
         height: 480px;
       }
+      #hide{
+        display: none;
+        visibility: hidden;
+      }
     </style>
   </head>
   <body>
     <div id="device"><div id="retainer">
     <div><canvas id="game" width="80" height="120"></canvas></div>
     <div id="console">console</div></div></div>
+    <div id="hide">
+      <img src="bdrop.png" id="bdrop"/>
+    </div>
   </body>
 </html>

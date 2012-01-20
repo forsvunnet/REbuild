@@ -37,9 +37,9 @@ $(document).ready(function(){
     if($('#device').css('width')!='320px')
       $('#device').animate({'width':320}, 1000);
     else
-      $('#device').animate({'width':320+650}, 1000);
+      $('#device').animate({'width':320+600}, 1000);
   });
-  setup();
+  init();
 });
 var fC = 0;
 function log(output){
@@ -61,10 +61,9 @@ var dbg = 0;
 var dbgx = 0;
 var test = true;
 var bdrop;
-function setup(){
+function init(){
   bdrop = new Backdrop("bdrop.png");
   bdrop.y=20;
-  log(bdrop);
 }
 function etch(){
   var ctx = canvas.getContext('2d');
@@ -74,11 +73,6 @@ function etch(){
   ctx.rect(0,0,w, h);
   ctx.fill();
   bdrop.draw(ctx);
-  /*
-  var timg = new Image();
-  timg.src = "bdrop.png";
-  ctx.drawImage(timg,0,0);
-  */
   
 }
-//});
+
